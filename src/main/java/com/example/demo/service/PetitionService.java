@@ -14,9 +14,9 @@ public class PetitionService {
         this.petitions = new ArrayList<>();
         // Add some sample petitions
         petitions.add(new Petition(1, "Ban Plastic Cutlery", "Petition to ban plastic cutlery from local vendors."));
-        petitions.add(new Petition(1, "Fund Irish Language Classes for Adults", "Petition to make Irish language learning more accessible."));
-        petitions.add(new Petition(2, "Build New Cycle Paths", "Petition to have new cycle paths built in the city."));
-        petitions.add(new Petition(2, "Free School Lunches for Children", "Petition to subsidse lunches for children in the area."));
+        petitions.add(new Petition(2, "Fund Irish Language Classes for Adults", "Petition to make Irish language learning more accessible."));
+        petitions.add(new Petition(3, "Build New Cycle Paths", "Petition to have new cycle paths built in the city."));
+        petitions.add(new Petition(4, "Free School Lunches for Children", "Petition to subsidse lunches for children in the area."));
     }
 
     public List<Petition> getAllPetitions() {
