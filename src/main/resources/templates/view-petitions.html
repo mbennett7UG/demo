@@ -8,6 +8,6 @@
         <a th:href="@{/petitions/{id}(id=${petition.id})}" th:text="${petition.title}"></a>
     </li>
 </ul>
-<a href="/petitions/create">Create a Petition</a>
+<a th:href="@{/petitions/create}">Create a Petition</a>
 </body>
 </html>
