@@ -57,6 +57,8 @@ public class PetitionController {
 
         }
         return "redirect:/petitions/" + id;
+
+
     }
 
     @GetMapping("/search")
