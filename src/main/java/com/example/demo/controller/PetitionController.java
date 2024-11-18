@@ -54,6 +54,7 @@ public class PetitionController {
         Petition petition = petitionService.getPetitionById(id);
         if (petition != null) {
             petition.addSignature(name + " (" + email + ")");
+
         }
         return "redirect:/petitions/" + id;
     }
