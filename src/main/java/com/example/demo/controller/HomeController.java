@@ -9,6 +9,6 @@ public class HomeController {
     // Handle the root URL and redirect to /petitions
     @GetMapping("/")
     public String homeRedirect() {
-        return "redirect:/petitions";
+        return "redirect:/demo/petitions";
     }
 }
