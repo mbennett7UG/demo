@@ -66,6 +66,7 @@ public class PetitionController {
         return "search-petition";
     }
 
+
     @PostMapping("/search")
     public String searchPetition(@RequestParam String query, Model model) {
         List<Petition> results = petitionService.getAllPetitions().stream()
