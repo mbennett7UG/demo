@@ -37,10 +37,16 @@ public class PetitionController {
     }
 
     @GetMapping
-    public String viewAllPetitions(Model model) {
-        model.addAttribute("petitions", petitionService.getAllPetitions());
+    public String viewLatestPetitions(Model model) {
+
         model.addAttribute("latestPetitions", petitionService.getLatestThreePetitions());
         return "view-petitions";
+    }
+
+    @GetMapping("/all")
+    public String viewAllPetitions(Model model) {
+        model.addAttribute("petitions", petitionService.getAllPetitions());
+        return "all-petitions"; // This is the page for all petitions
     }
 
     @GetMapping("/{id}")
