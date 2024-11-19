@@ -20,10 +20,6 @@ public class PetitionController {
 
 
 
-    @GetMapping("/index")
-    public String indexPage() {
-        return "index";
-    }
 
     @GetMapping("/create")
     public String createPetitionPage() {
@@ -67,7 +63,7 @@ public class PetitionController {
 
     @GetMapping("/search")
     public String searchPage() {
-        return "searcg-petition";
+        return "search-petition";
     }
 
 
