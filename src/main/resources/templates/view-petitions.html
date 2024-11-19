@@ -4,7 +4,7 @@
 <body>
 <h1>All Petitions:</h1>
 <ul>
-    <li th:each="petition : ${#lists.reverse(petitions).subList(0, petitions.size() > 3 ? 3 : petitions.size())}">
+    <li th:each="petition : ${latestPetitions}">
         <a th:href="@{/petitions/{id}(id=${petition.id})}" th:text="${petition.title}"></a>
     </li>
 </ul>

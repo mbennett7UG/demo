@@ -39,6 +39,7 @@ public class PetitionController {
     @GetMapping
     public String viewAllPetitions(Model model) {
         model.addAttribute("petitions", petitionService.getAllPetitions());
+        model.addAttribute("latestPetitions", petitionService.getLatestThreePetitions());
         return "view-petitions";
     }
 
