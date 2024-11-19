@@ -20,6 +20,10 @@ public class PetitionController {
 
 
 
+    @GetMapping("/index")
+    public String indexPage() {
+        return "index";
+    }
 
     @GetMapping("/create")
     public String createPetitionPage() {
