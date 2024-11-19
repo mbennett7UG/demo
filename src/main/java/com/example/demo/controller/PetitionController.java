@@ -63,7 +63,7 @@ public class PetitionController {
 
     @GetMapping("/search")
     public String searchPage() {
-        return "search-petition";
+        return "searcg-petition";
     }
 
 
